@@ -1,0 +1,1 @@
+from owner Own, article Art, category_article_mapping Cat select Art.owner_id, Own.owner_name, count(Cat.category_id) as cat_count where Own.owner_id = Art.owner_id and Art.article_id = Cat.article_id group by Own.owner_id
