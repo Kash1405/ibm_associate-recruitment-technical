@@ -1,9 +1,9 @@
 if __name__ == '__main__':
 
     # inputs
-    a = int(input())
+    a = int(input())  # not required for this case
     shirts = list(input().split())
-    b = int(input())
+    b = int(input())  # not required for this case
     req = list(input().split())
 
     # dict for sizes
@@ -24,7 +24,7 @@ if __name__ == '__main__':
             size[s].append(c*-1)
     # sort sizes dict
     size['S'].sort()
-    # size['M'].sort()
+    size['M'].sort()
     size['L'].sort()
 
     # checking if all requirements met
